@@ -1,0 +1,10 @@
+server:
+  port: 8060
+# spring:
+#   rabbitmq:
+#     host: localhost
+#     port: 5672
+#     username: guest
+#     password: guest
+
+# rabbit-mq-server
