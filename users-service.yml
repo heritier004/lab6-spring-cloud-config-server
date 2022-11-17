@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 0
 
 spring:
   datasource:
-    url: jdbc:postgresql://users-db-server:5432/users-db
+    url: jdbc:postgresql://localhost:5422/users-db
     username: postgres
     password: 1234
   jpa:
@@ -22,6 +22,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://service-discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     instance-id: ${spring.application.name}:${random.uuid}
